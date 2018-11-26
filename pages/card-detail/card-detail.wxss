@@ -1,0 +1,7 @@
+/* pages/card-detail/card-detail.wxss */
+.detail-btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

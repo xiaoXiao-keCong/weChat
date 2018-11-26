@@ -1,0 +1,14 @@
+/* pages/card-clip/card-clip.wxss */
+.container{
+    /* justify-content: space-around; */
+}
+.search-box{
+    position: fixed;
+    bottom: 200rpx;
+    right: 50rpx;
+}
+.search-box image{
+    width: 120rpx;
+    height: 80rpx;
+
+}

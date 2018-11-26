@@ -1,0 +1,13 @@
+/* pages/search-connections/search-connections.wxss */
+.no-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+.no-result image{
+    width: 120rpx;
+    height: 80rpx;
+}

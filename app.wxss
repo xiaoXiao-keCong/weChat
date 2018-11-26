@@ -1,0 +1,104 @@
+/**app.wxss**/
+@import './weui.wxss';
+page{
+    height: 100vh;
+    width: 100%;
+     background-color: rgba(250,250,250,0.80);
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+    padding-bottom: 120rpx;
+
+  box-sizing: border-box;
+  /* background: #f7f7f7; */
+} 
+
+.form-control{
+    display: flex;
+    padding: 20rpx;
+    background: #fff;
+}
+.form-control .text{
+    padding: 0 10rpx;
+    min-width: 150rpx;
+
+}
+.form-control switch {
+    align-self: right;
+}
+.form-control .text.required::after{
+    content: "*";
+    display:inline;
+    color:red;
+}
+.form-control input,
+.form-control .form-input,
+.form-control input{
+    flex-grow: 1;
+    width: 200rpx;
+
+}
+.form-control .form-input{
+    width: auto;
+}
+.form-control .form-input{
+    text-align: right;
+}
+/* 重置 button样式 */
+button{
+    /* padding: 0; */
+    /* line-height: 1; */
+    font-size: 28rpx;
+}
+button::after{
+    border: none;
+   
+
+}
+
+.gap{
+    height: 20rpx;
+
+
+}
+
+.border-bottom{
+    border-bottom: 1rpx solid #ccc;
+}
+/*swtich整体大小及背景色*/
+.wx-switch-input{
+    /* width:82rpx !important; */
+    /* height:36rpx !important; */
+    /* background: blue !important; */
+    /* border: none !important; 2018-07-18 重置开关边框颜色 */
+}
+
+
+.take-photo{
+    width: 120rpx;
+    /* height: 80prx; */
+    margin: 20rpx;
+}
+.bg-img{
+    width: 120rpx;
+    height: 40rpx;
+
+}
+.btn-box{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-box button{
+    width: 160rpx;
+    vertical-align: middle;
+    background: blue;
+    color: #fff;
+}

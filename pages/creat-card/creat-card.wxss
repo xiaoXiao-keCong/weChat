@@ -1,0 +1,17 @@
+/* pages/creat-card/creat-card.wxss */
+.creat-card-container{
+    padding-top: 40rpx;
+}
+.creat-card-top{
+    /* padding: 40rpx; */
+    width: 690rpx;
+    /* height: 100px; */
+    /* background: #999; */
+    margin: 0 auto;
+    
+}
+.creat-card-bottom{
+    display: flex;
+    /* height: 80rpx; */
+    padding: 20rpx;
+}

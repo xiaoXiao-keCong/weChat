@@ -1,0 +1,11 @@
+<!--pages/card-clip/card-clip.wxml-->
+<!-- <text>pages/card-clip/card-clip.wxml</text> -->
+<view class='container'>
+    <block><card-info></card-info></block>
+    <block><card-info></card-info></block>
+</view>
+<view class='search-box' bindtap='toSearchConnections'>
+    <image src='../../imgs/bland.png' class=''></image>
+    <view>搜索人脉</view>
+</view>
+<!-- <tabbar tabbar="{{tabbar}}"></tabbar> -->

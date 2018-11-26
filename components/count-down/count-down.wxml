@@ -1,0 +1,5 @@
+<!--components/count-down/count-down.wxml-->
+<!-- <text>components/count-down/count-down.wxml</text> -->
+<count-down>
+    <button disabled='{{disabled}}' bindtap='bindTap'>{{content}}</button>
+</count-down>

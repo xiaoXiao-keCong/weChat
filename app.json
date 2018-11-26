@@ -1,0 +1,29 @@
+{
+    "pages": [
+        
+        "pages/index/index",
+        "pages/card-clip/card-clip",
+        "pages/creat-card/creat-card",
+        "pages/card-detail/card-detail",
+        "pages/change-card/change-card",
+        "pages/search-connections/search-connections"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#35AADD",
+        "navigationBarTitleText": "同业名片",
+        "navigationBarTextStyle": "white",
+        "onReachBottomDistance": 50
+    }
+    ,
+    "tabBar": {
+        "list": [
+            {
+                "text": "我的名片"
+            },
+            {
+                "text": "名片夹"
+            }
+        ]
+    }
+}
