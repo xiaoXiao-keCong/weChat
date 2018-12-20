@@ -1,0 +1,8 @@
+<!--components/my-card/my-card.wxml-->
+<view wx:if="{{hasUserCard}}">
+        <card-info card-info="{{userCardInfo}}" options="{{options}}"></card-info>
+    </view> 
+    <view class='content' wx:else="{{hasUserCard}}">
+        xxx
+        <button class='creat-card-btn' open-type='getUserInfo' bindtap='toCreatPage'>创建我的名片</button>
+    </view>

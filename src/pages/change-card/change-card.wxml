@@ -1,0 +1,62 @@
+<!--pages/change-card/change-card.wxml-->
+<import src="../../templates/take-photo/take-photo.wxml"/>
+
+<form bindsubmit="formSubmit" bindreset="formReset">
+    <view class='form-control box-shaow'>
+        <view class='text mar_30 required'>姓名</view>
+        <input name="name" class='input' maxlength="10" placeholder="姓名" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_30 required'>手机</view>
+        <input name="phone" class='input' maxlength="10" type='number' placeholder="请输入姓名" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_30 required'>公司</view>
+        <input name="country" class='input' maxlength="10" placeholder="请输入公司名称" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_30 required'>职位</view>
+        <input name="country" class='input' maxlength="10" placeholder="请输入职位名称" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_30'>部门</view>
+        <input name="country" class='input' maxlength="10" placeholder="请输入部门名称" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_10'>工作电话</view>
+        <input name="country" class='input' maxlength="10" placeholder="请输入工作电话" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_10'>机构邮箱</view>
+        <input name="country" class='input' maxlength="10" placeholder="请输入机构邮箱" />
+    </view>
+    <view class='form-control box-shaow'>
+        <view class='text mar_10'>工作地址</view>
+        <input name="country" class='input' maxlength="10" placeholder="请输入工作地址" />
+    </view>
+    <view class='form-control mar_30' >
+        <view class='text'>头像</view>
+        <image class='header-logo' src='../../imgs/img_head_default4_720@2x.png' ></image>
+    </view>
+    <view class='gap'></view>
+    <view class='form-control  box-shaow' >
+        <view class='text long-text'>手机仅互换名片可见</view>
+        <view class='form-input'>
+            <label class='self-switch {{country1 }}'  >
+                <switch  hidden name="country1"  data-name="country1" bindchange='switchChange'></switch>
+            </label>
+        </view>
+    </view>
+    <view class='form-control  box-shaow' >
+        <view class='text long-text'>名片不允许他人搜索</view>
+        <view class='form-input'>
+            <label  class='self-switch {{country2}}'>
+                <switch  hidden name="country2" data-name="country2" bindchange='switchChange'></switch>
+            </label>
+        </view>
+    </view>
+    <view class='creat-card-bottom' >
+        <template is="take-photo" data-self-data="{{{name:23}}"/>
+</view>
+
+</form>

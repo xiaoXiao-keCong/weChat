@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- <view class='content'>
+        <card-info card-info="{{userCardInfo}}" options="{{options}}"></card-info>
+    </view>  -->
+    <view class='content'>
+        <view class='card-info-container'>
+            <view class='card-info-top'>
+                <view class="left-info">
+                    <text>{{userCardInfo.country}}</text>
+                    <text class='default-color'>公司名字</text>
+                    <text>姓名</text>
+                </view>
+                <view class='header-logo-container'>
+                    <image class='header-logo' src="{{ ('/imgs/img_head_default4_720@2x.png')}}"></image>
+                </view>
+            </view>
+            <view class='index-phone-number one'>
+            </view>
+            <view class='index-phone-number two'>
+            </view>
+            <view class='index-phone-number three'>
+            </view>
+             <view class='index-phone-number fourth'>
+            </view>
+            <view class='border'></view>
+            <view class='scan-card'>
+                <text class='rotate-text'>扫码获取名片</text>
+                <image class='scan-code' src='../../imgs/er-wei-ma.png'></image>
+                <text>扫码获取名片</text>
+            </view>
+
+            <view>
+                <button class='creat-card-btn' open-type='getUserInfo' bindtap='toCreatPage'>创建我的名片</button>
+            </view>
+        </view>
+    </view>
+    <tabbar tabbar="{{tabbar}}"></tabbar>
+</view>

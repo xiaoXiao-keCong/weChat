@@ -1,0 +1,65 @@
+<!--components/card-info/card-info.wxml-->
+<import src="../../templates/take-photo/take-photo.wxml"/>
+<card-info>
+    <view class='card-info-container'>
+        <image class='card-status-img' src='/imgs/icon_yibaocun@2x.png'></image>
+        <view class='card-info-top'>
+            <view class="left-info">
+                <text wx:if="{{cardInfo.country}}">{{cardInfo.country}}</text>
+                <text class='default-color' wx:else="{{cardInfo.country}}">公司名字</text>
+                <text bindtap='toCardDetail'>{{cardInfo.userNm || '姓名'}}</text>
+            </view>
+            <view class='header-logo-container'>
+            <image wx:if="{{options.isImgEditor}}" bindtap='chooseImg' data-url="{{''}}" class='header-logo' mode='widthFix' src="{{ (options.imgSrc || '/imgs/img_head_default4_720@2x.png')}}"></image>
+                <image wx:else="{{options.isImgEditor}}" class='header-logo' mode='widthFix' src="{{(options.imgSrc || '/imgs/img_head_default4_720@2x.png')}}"></image>
+                
+            </view>
+        </view>
+        <view class='position default-color'>
+            <text class='{{cardInfo.position ? "": "no-content"}}' decode="true">&nbsp; {{cardInfo.position}}</text>
+        </view>
+        <view class='phone-number default-color'>
+            <image class='icon-img' src='../../imgs/icon_dianhuahaoma@2x.png' mode='widthFix'></image>
+            <text decode="true">&nbsp;地址</text>
+        </view>
+        <view class='address' wx:if="{{options.isShowAddress}}">
+            <view class='default-color'>
+                <image wx:if="{{cardInfo.address}}" class='icon-img' src='../../imgs/icon_dingzhi@2x.png' mode='widthFix'></image>
+                <text decode="true" class='{{cardInfo.address ? "": "no-content"}}'>&nbsp;{{cardInfo.address}}</text>
+            </view>
+            <view wx:if="{{options.isShowEditor}}" class='default-color'>
+                <image  class='icon-img setting'  src='../../imgs/btn_bianji@2x.png' mode='widthFix'></image>
+                <text bindtap='toChangeCardPage'   data-card-info='{{cardInfo}}'>编辑</text>
+            </view>
+
+        </view>
+        <!-- <view class='show-more' >
+            <view>显示更多</view>
+            <view>收起</view>
+            <view>
+                <image class='icon-img' src='../../imgs/bland.png' mode='widthFix'></image>
+                资产管理部
+            </view>
+            <view>
+                <image class='icon-img' src='../../imgs/bland.png' mode='widthFix'></image>
+                010 - 87676723
+            </view>
+            <view>
+                <image class='icon-img' src='../../imgs/bland.png' mode='widthFix'></image>
+                waehg888@hotmail.com
+            </view>
+        </view> -->
+        <view class='scan-card'  wx:if="{{options.isShowScanCode}}">
+            <text class='rotate-text'>扫码获取名片</text>
+             <image class='scan-code' src='../../imgs/bland.png' mode='widthFix'></image>
+             <text>扫码获取名片</text>
+        </view>
+        <view wx:if="{{options.isShowSendCardBtn}}">
+            <button class='send-card' open-type='share' >发名片</button>
+        </view>
+        <view wx:if="{{options.isShowCreatBtn}}">
+            <button class='creat-card-btn' open-type='getUserInfo' bindtap='toCreatPage'>创建我的名片</button>
+        </view>
+    </view>
+
+</card-info>

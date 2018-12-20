@@ -1,0 +1,13 @@
+/* pages/change-card/change-card.wxss */
+.form-control .mar_30{
+    min-width: auto;
+    margin-right: 60rpx;
+}
+.form-control .mar_10{
+    min-width: auto;
+    margin-right: 20rpx;
+}
+.header-logo{
+    width: 120rpx;
+    height: 120rpx;
+}

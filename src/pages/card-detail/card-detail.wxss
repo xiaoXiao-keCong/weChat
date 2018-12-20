@@ -1,0 +1,11 @@
+/* pages/card-detail/card-detail.wxss */
+.detail-btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+.mar-bot-20{
+    margin-bottom: 40rpx;
+}

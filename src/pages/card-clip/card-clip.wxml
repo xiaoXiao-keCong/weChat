@@ -1,0 +1,18 @@
+<!--pages/card-clip/card-clip.wxml-->
+<!-- <text>pages/card-clip/card-clip.wxml</text> -->
+<view class='card-clip-container'>
+    <view class="alert-card-info">
+        <card-info></card-info>
+        <view class='handle-box'>
+           <text>忽略</text>
+           <text>同意交换</text>
+        </view>
+    </view>
+    <view class="card-info-item"><card-info></card-info></view>
+    <view class="card-info-item"><card-info></card-info></view>
+</view>
+<view class='search-box' bindtap='toSearchConnections'>
+    <text>搜索</text>
+    <text>人脉</text>
+</view>
+<tabbar tabbar="{{tabbar}}"></tabbar>

@@ -1,0 +1,51 @@
+/* pages/card-clip/card-clip.wxss */
+.container{
+    /* justify-content: space-around; */
+}
+.search-box{
+    position: fixed;
+    bottom: 180rpx;
+    right: 60rpx;
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    background: #5ABEC8;
+    font-size: 30rpx;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.alert-card-info{
+    background: rgba(90,190,200,0.75);
+box-shadow: inset 0 -2rpx 0 0 #E2E2E2;
+    padding: 40rpx;
+}
+.alert-card-info .card-info-container{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.handle-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: inset 0 2rpx 0 0 #E2E2E2;
+    border-bottom-right-radius:10rpx;
+    border-bottom-left-radius:10rpx;
+}
+.handle-box text{
+    flex: 0.5;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 26rpx;
+    color:  #5ABEC8;
+    
+}
+.handle-box text:first-child{
+    border-right: 2rpx solid #E2E2E2;
+    color: #333;
+}

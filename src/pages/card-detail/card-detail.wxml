@@ -1,0 +1,15 @@
+<!--pages/card-detail/card-detail.wxml-->
+<view class='card-detail'>
+    <view class='card-info-item'>
+    <card-info options="{{detailOption}}"></card-info>
+    </view>
+    <view class='detail-btn-box'>
+        <button class="default-btn mar-bot-20">回递并保存名片</button>
+        <button class="default-btn mar-bot-20">交换并保存名片</button>
+        <button class="light-btn mar-bot-20">仅保存名片</button>
+        <button class="default-btn mar-bot-20">回递名片</button>
+        <button class="danger-btn mar-bot-20">删除名片</button>
+        <button class="saveed-btn mar-bot-20">已成功交换</button>
+        <button class="saveed-btn mar-bot-20">等待对方确认</button>
+    </view>
+</view>

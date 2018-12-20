@@ -1,0 +1,23 @@
+/* components/my-card/my-card.wxss */
+.container{
+    /* padding: 20px; */
+    padding-left:40rpx;
+    padding-right: 40rpx; 
+    padding-top: 40rpx; 
+    position: relative;
+}
+
+.creat-card-btn{
+    width: 50%;
+    position: absolute;
+    bottom: 140rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background: #999;
+    border-radius: 5px;
+
+}

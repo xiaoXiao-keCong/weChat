@@ -1,0 +1,27 @@
+/* pages/creat-card/creat-card.wxss */
+.creat-card-container{
+    padding-top: 40rpx;
+}
+.creat-card-top{
+    /* width: 100%; */
+    padding: 40rpx;    
+}
+
+.button{
+   font-size:26rpx;
+    color: #5ABEC8;
+    text-align: center;
+    background: none;
+    /* height: 32rpx; */
+    line-height: 50rpx;
+}
+
+.button[disabled]:not([type]) {
+color: #5ABEC8;
+background: none;
+cursor: not-allowed;
+line-height: 50rpx;
+}
+.form-control .text{
+    min-width: 100rpx;
+}

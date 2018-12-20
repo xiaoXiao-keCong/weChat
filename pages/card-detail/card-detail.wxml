@@ -1,9 +1,0 @@
-<!--pages/card-detail/card-detail.wxml-->
-<view class='card-detail'>
-    <card-info options="{{detailOption}}"></card-info>
-    <view class='detail-btn-box'>
-        <button>回递并保存名片</button>
-        <button>仅保存名片</button>
-    </view>
-</view>
-<!-- <tabbar tabbar="{{tabbar}}"></tabbar> -->

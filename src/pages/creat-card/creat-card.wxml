@@ -1,0 +1,41 @@
+<!--pages/creat-card/creat-card.wxml-->
+<import src="../../templates/take-photo/take-photo.wxml"/>
+<form bindsubmit="formSubmit" class='creat-card-container'>
+    <view class='creat-card-top'>
+        <card-info options="{{ cardInfoOptions }}"></card-info>
+    </view>
+    <view class='creat-card-middle'>
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class='form-control box-shaow' >
+                <view class='text required'>姓名</view>
+                <input name="userNm" class='input' maxlength="10" placeholder="姓名" />
+            </view>
+            <view class='form-control'>
+                <view class='text required'>手机</view>
+                <input name="phone" class='input' maxlength="11" bindinput="phoneNumberInput" type='number' placeholder="常用手机号码" />
+                <count-down button="button" disabled="{{disabled}}" time-count="{{10}}" bindcustomevent="tapBtn"></count-down>
+            </view>
+            <view class='form-control' wx:if="{{isShowCode}}">
+                <view class='text required'>验证码</view>
+                <input name="scanCode" class='input' maxlength="6" type='number' placeholder="请输入验证码" />
+            </view>
+            <view class='gap'></view>
+            <view class='form-control box-shaow '>
+                <view class='text required'>公司</view>
+                <input name="country" class='input' maxlength="20"  placeholder="请输入公司名称" />
+            </view>
+            <view class='form-control box-shaow '>
+                <view class='text required'>职位</view>
+                <input name="position" class='input' maxlength="10"  placeholder="请输入职位" />
+            </view>
+             <view class='form-control'>
+                <view class='text required'>地址</view>
+                <input name="address" class='input' maxlength="50" placeholder="请输入工作地址" />
+            </view>
+        </form>
+    </view>
+      <view class='creat-card-bottom'>
+        <template is="take-photo" data-self-data="{{{name:23}}"/>
+    </view>
+    
+</form>
